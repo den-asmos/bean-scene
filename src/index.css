@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-clicker: 'Clicker Script', cursive;
+  --font-playfair: 'Playfair Display', serif;
+
+  --color-golden: #f9c06a;
+  --color-hover: rgba(249, 192, 106, 0.42);
+  --color-coffee: #603809;
+  --color-cream: #fff9f1;
+  --color-black: #1e1e1e;
+  --color-gray: #707070;
+  --color-white: #ffffff;
+
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}

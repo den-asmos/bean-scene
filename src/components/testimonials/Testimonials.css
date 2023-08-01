@@ -1,0 +1,129 @@
+.app__testimonials {
+  margin-bottom: 2rem;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.app__testimonials p {
+  color: var(--color-gray);
+}
+
+.app__testimonials-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__testimonials-content h1 {
+  margin-bottom: 1rem;
+}
+
+.app__testimonials-cards {
+  position: relative;
+}
+
+.app__testimonials-card_arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 45%;
+}
+
+.app__testimonials-card_arrows button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 82px;
+}
+
+.app__testimonials-card_arrows svg {
+  color: var(--color-coffee);
+  font-size: 1.5rem;
+}
+
+.app__testimonials-blastTop,
+.app__testimonials-blastBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+.app__testimonials-blastTop {
+  transform: scale(-1, 1);
+  top: 15%;
+  right: 0;
+}
+
+.app__testimonials-blastBottom {
+  transform: scale(1, -1);
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .app__testimonials-blastBottom img,
+  .app__testimonials-blastTop img {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__testimonials-blastBottom img,
+  .app__testimonials-blastTop img {
+    width: 290px;
+  }
+
+  .app__testimonials-blastTop {
+    top: 10%;
+  }
+
+  .app__testimonials-card_arrows button {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .app__testimonials-card_arrows {
+    bottom: 0;
+    justify-content: space-around;
+  }
+
+  .app__testimonials-blastBottom img,
+  .app__testimonials-blastTop img {
+    width: 200px;
+  }
+
+  .app__testimonials-blastTop {
+    top: 20%;
+  }
+
+  .app__testimonials-blastBottom {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .app__testimonials-blastBottom {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__testimonials-blastTop {
+    display: none;
+  }
+
+  .app__testimonials-card_arrows {
+    justify-content: space-between;
+  }
+}

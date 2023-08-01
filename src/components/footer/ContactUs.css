@@ -1,0 +1,165 @@
+.app__contactUs {
+  background: url('../../assets/footer.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app__contactUs-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.app__contactUs-wrapper p {
+  font-family: var(--font-playfair);
+  font-weight: 400;
+}
+
+.app__contactUs-logo,
+.app__contactUs-about,
+.app__contactUs-company,
+.app__contactUs-contacts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--color-white);
+}
+
+.app__contactUs-logo {
+  align-items: start;
+}
+
+.app__contactUs-about,
+.app__contactUs-company,
+.app__contactUs-contacts {
+  align-items: center;
+  text-align: center;
+}
+
+.app__contactUs-logo h1 {
+  font-family: var(--font-clicker);
+  font-size: 54px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app__contactUs-logo p {
+  margin: 1.2rem 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.app__contactUs-logo_icons svg {
+  margin: 1rem 1rem 0 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.app__contactUs-info {
+  padding-left: 5rem;
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.app__contactUs-about h1,
+.app__contactUs-company h1,
+.app__contactUs-contacts h1 {
+  margin-bottom: 2rem;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.app__contactUs-about p,
+.app__contactUs-company p,
+.app__contactUs-contacts p {
+  margin: 0.7rem 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__contactUs-logo p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__contactUs-about h1,
+  .app__contactUs-company h1,
+  .app__contactUs-contacts h1 {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+
+  .app__contactUs-about p,
+  .app__contactUs-company p,
+  .app__contactUs-contacts p {
+    margin: 0.5rem 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .app__contactUs-wrapper {
+    flex-direction: column;
+  }
+
+  .app__contactUs-logo {
+    margin-bottom: 2.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app__contactUs-logo p {
+    margin: 0.5rem;
+  }
+
+  .app__contactUs-info {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .app__contactUs-about h1,
+  .app__contactUs-company h1,
+  .app__contactUs-contacts h1 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+
+  .app__contactUs-about p,
+  .app__contactUs-company p,
+  .app__contactUs-contacts p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__contactUs-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app__contactUs-about,
+  .app__contactUs-company,
+  .app__contactUs-contacts {
+    margin-bottom: 1.5rem;
+  }
+
+  .app__contactUs-about h1,
+  .app__contactUs-company h1,
+  .app__contactUs-contacts h1,
+  .app__contactUs-about p,
+  .app__contactUs-company p,
+  .app__contactUs-contacts p {
+    margin-bottom: 0.2rem;
+  }
+}

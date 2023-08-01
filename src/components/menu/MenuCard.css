@@ -1,0 +1,56 @@
+.menu__card {
+  margin: 2em 1em;
+  padding-bottom: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-cream);
+  border: 1px solid var(--color-golden);
+}
+
+.menu__card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__card-image img {
+  width: 260px;
+  object-fit: contain;
+}
+
+.menu__card-content {
+  font-family: var(--font-playfair);
+}
+
+.menu__card-content_header {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-coffee);
+}
+
+.menu__card-content_composition {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.menu__card-content_price {
+  margin-bottom: 1em;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-coffee);
+}
+
+.menu__card button {
+  position: absolute;
+  bottom: -1.5rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .menu__card {
+    margin: 4em;
+  }
+}

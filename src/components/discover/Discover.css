@@ -1,0 +1,91 @@
+.app__discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background: #fffefc;
+}
+
+.app__discover-content {
+  margin-right: 30px;
+  flex: 1;
+}
+
+.app__discover-content p {
+  margin: 30px 0;
+  color: var(--color-gray);
+}
+
+.app__discover-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.app__discover-coffeeBlast {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__discover-image img {
+    margin-right: 60px;
+    width: 700px;
+  }
+
+  .app__discover-coffeeBlast img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__discover-image img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .app__discover {
+    flex-direction: column;
+  }
+
+  .app__discover-content {
+    margin: 0;
+  }
+
+  .app__discover-image {
+    justify-content: center;
+  }
+
+  .app__discover-coffeeBlast {
+    bottom: -5%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__discover-coffeeBlast img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__discover {
+    text-align: center;
+  }
+
+  .app__discover-image img {
+    width: 300px;
+  }
+
+  .app__discover-coffeeBlast {
+    bottom: -3%;
+  }
+
+  .app__discover-coffeeBlast img {
+    width: 200px;
+  }
+}

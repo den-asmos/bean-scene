@@ -1,0 +1,111 @@
+.app__newsLetter {
+  background: url('../../assets/order.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.app__newsLetter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__newsLetter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.app__newsLetter-content h1 {
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.app__newsLetter-input {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.app__newsLetter-input input:focus {
+  box-shadow: 0 0 7px var(--color-golden);
+}
+
+.app__newsLetter-input input {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-family: var(--font-playfair);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-gray);
+  width: 100%;
+}
+
+.app__newsLetter-input input::placeholder {
+  color: var(--color-gray);
+}
+
+.app__newsLetter-input button {
+  padding: 1rem;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__newsLetter-input input,
+  .app__newsLetter-input button {
+    font-size: 18px;
+  }
+
+  .app__newsLetter-input {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .app__newsLetter-input input,
+  .app__newsLetter-input button {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+
+  .app__newsLetter-input {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .app__newsLetter-input {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .app__newsLetter-input {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__newsLetter-input input,
+  .app__newsLetter-input button {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .app__newsLetter-input {
+    width: 95%;
+  }
+}

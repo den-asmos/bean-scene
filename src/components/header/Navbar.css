@@ -1,0 +1,124 @@
+.app__navbar {
+  padding: 1.5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+}
+
+.app__navbar-logo h1 {
+  font-family: var(--font-clicker);
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.app__navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.app__navbar-links li,
+.app__navbar-login p {
+  margin: 0 30px;
+  font-family: var(--font-playfair);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.app__navbar-links li:hover,
+.app__navbar-login p:hover {
+  color: var(--color-golden);
+}
+
+.app__navbar-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__navbar-logo h1 {
+    font-size: 48px;
+  }
+
+  .app__navbar-links li,
+  .app__navbar-login p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__navbar {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app__navbar-links,
+  .app__navbar-login {
+    display: none;
+  }
+
+  .app__navbar-smallscreen {
+    display: flex;
+    position: relative;
+  }
+
+  .navbar__menu {
+    font-size: 32px;
+    color: var(--color-white);
+  }
+
+  .navbar__close {
+    position: absolute;
+    top: -20px;
+    right: -17px;
+    font-size: 40px;
+    color: var(--color-white);
+    z-index: 1;
+  }
+
+  .navbar__close:hover,
+  .navbar__menu:hover,
+  .app__navbar-smallscreen_links li:hover {
+    color: var(--color-golden);
+  }
+
+  .app__navbar-smallscreen_links {
+    padding: 1.5rem;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 180px;
+    background: var(--color-black);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+
+  .app__navbar-smallscreen_links li {
+    margin: 5px 0;
+    font-family: var(--font-playfair);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+}

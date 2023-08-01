@@ -1,0 +1,33 @@
+.app__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.app__menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__menu-content p {
+  margin-top: 1rem;
+  color: var(--color-gray);
+}
+
+.app__menu-coffee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__menu-coffee {
+    flex-direction: column;
+  }
+}

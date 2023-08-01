@@ -1,0 +1,55 @@
+.app__aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.app__aboutUs p {
+  color: var(--color-gray);
+  line-height: normal;
+}
+
+.app__aboutUs-heading,
+.app__aboutUs-subheading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__aboutUs-heading h1 {
+  margin-bottom: 1rem;
+}
+
+.app__aboutUs-subheading h1 {
+  margin: 1.5rem 0;
+  font-size: 30px;
+}
+
+.app__aboutUs-cards {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__aboutUs-subheading h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .app__aboutUs-cards {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__aboutUs-subheading h1 {
+    font-size: 24px;
+  }
+}

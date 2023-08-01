@@ -1,0 +1,94 @@
+.section__padding {
+  padding: 6rem;
+}
+
+.app__bg {
+  background: url('./assets/hero.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.p__playfair {
+  font-family: var(--font-playfair);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  color: var(--color-white);
+}
+
+.headtext {
+  font-family: var(--font-playfair);
+  font-size: 54px;
+  font-weight: 700;
+  color: var(--color-coffee);
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  width: fit-content;
+  background: var(--color-golden);
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  color: var(--color-black);
+  font-family: var(--font-playfair);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 2000px) {
+  .p__playfair {
+    font-size: 28px;
+    line-height: 46px;
+  }
+
+  .headtext {
+    font-size: 64px;
+  }
+
+  .btn {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .p__playfair {
+    font-size: 16px;
+  }
+
+  .headtext {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section__padding {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__padding {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .section__padding {
+    padding: 1rem;
+  }
+}
